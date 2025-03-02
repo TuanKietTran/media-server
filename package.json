@@ -1,0 +1,36 @@
+{
+  "name": "problem4",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "nodemon --watch main.ts --watch src/ --exec tsx main.ts",
+    "generate-docs": "node scripts/generateSwagger.js",
+    "build": "tsc -p tsconfig.server.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
+    "express": "^4.21.2",
+    "image-size": "^2.0.0",
+    "multer": "^1.4.5-lts.1",
+    "redoc-express": "^2.1.0",
+    "swagger-jsdoc": "^6.2.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/image-size": "^0.7.0",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.13.7",
+    "drizzle-kit": "^0.30.5",
+    "nodemon": "^3.1.9",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
